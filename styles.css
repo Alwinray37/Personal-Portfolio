@@ -13,11 +13,13 @@ body{
     min-height: 100vh;
     width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     max-width: 800px;
-    max-height: 300px;
-    margin: auto;
+    max-height: 500px;
+    margin: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -28,6 +30,7 @@ body{
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);  
     border-radius: 15px;
+    box-shadow: 2px 2px 5px -3px whitesmoke;
 }
 @keyframes gradient {
 	0% {
