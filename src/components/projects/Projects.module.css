@@ -1,0 +1,37 @@
+div .projects h1 {
+    margin: 0 0 20px 0;
+}
+div.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.projectsCont {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    background-color: rgba(137, 43, 226, 0.559);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cardImg {
+    height: 150px;
+    overflow: hidden;
+}
+.cardImg img{
+    height: 100%;
+    object-fit: cover;
+}
+.card p, .card h3, .card .stack {
+    margin: 5px;
+}
+
+@media (max-width: 750px){
+    .projectsCont{
+        flex-direction: column;
+    }
+}

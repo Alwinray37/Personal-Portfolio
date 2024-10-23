@@ -1,0 +1,27 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+.container {
+  /* outline: 1px solid red; */
+  width: 100vw;
+  padding: 20px 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 750px) {
+  .container{
+      flex-direction: column-reverse
+  }
+  #contact{
+    flex-direction: column;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

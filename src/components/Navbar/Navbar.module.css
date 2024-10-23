@@ -1,0 +1,55 @@
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 0 10%;
+    height: 50px;
+}
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--color-tertiary);
+}
+nav a{
+    text-decoration: none;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+nav a:hover {
+    transform: scale(1.1);
+    color: var(--color-tertiary);
+}
+i.menuBar {
+    color: var(--color-text);
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    i.menuBar {
+      display: inline-block; /* Show the icon on small screens */
+    }
+    .navLinks{
+        display: none;
+        font-size: 2rem;
+    }
+    .showMenu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+        background: rgb(25, 55, 109);
+        background: linear-gradient(0deg, rgba(25, 55, 109, .02) 0%, rgba(25, 55, 109, 1) 100%);
+        padding: 20px
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../vars.css';
+
+.container {
+    /* outline: 1px red solid; */
+    width: 100vw;
+    padding: 20px 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pfp{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    border: 5px solid var(--color-tertiary);
+}
+img {
+    width: 100%;
+}
+Button {
+    padding: 10px;
+    background-color: var(--color-tertiary);
+    border-radius: 10px;
+    border: none;
+    color: var(--color-dark);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transition: background-color 0.3s ease;
+}
+Button:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 2px 2px green ;
+    /* background-color: #28a745;
+    color: var(--color-text); */
+}
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: start;
+}
+
+@media (max-width: 750px) {
+    .container{
+        flex-direction: column-reverse
+    }
+}
