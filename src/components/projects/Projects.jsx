@@ -1,22 +1,25 @@
 import styles from './Projects.module.css'
+import calculatorImg from '../../assets/calculator.png'
+import etchImg from '../../assets/etchSketch.png'
+import drillImg from '../../assets/vballDrills.png'
 
 const projects = [
     {
         title: "Calculator",
         description: "Simple Calculator made with HTML, CSS, and JavaScript",
-        image: "/src/calculator.png?url",
+        image: calculatorImg,
         stack: "HTML, CSS, JavaScript"
     },
     {
         title: "Volleyball Library",
         description: "A library of volleyball drills where coaches can use to create their practice plans.",
-        image: "/src/vballDrills.png?url",
+        image: drillImg,
         stack: "React, Node.js, MongoDB"
     },
     {
         title: "Etch-A-Sketch",
         description: "Web app that lets users draw and Sketch on a virtual canvas. Written in HTML, CSS and JavaScript.",
-        image: "/src/etchSketch.png?url",
+        image: etchImg,
         stack: "Python, Flask, SQL"
     }
 ];
