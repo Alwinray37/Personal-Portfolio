@@ -13,3 +13,7 @@
     flex-direction: column;
     gap: 10px;
 }
+.skillsContainer {
+    display: flex;
+    gap: 10px;
+}

@@ -42,10 +42,11 @@ function Projects() {
         <div id='projects' className={`container ${styles.projects}`}>
             <h1>Projects</h1>
             <div className={`${styles.projectsCont}`}>
-                    {projects.map((project, index) => (
-                        <ProjectCard key={index} project={project} />
-                    ))}
-                </div>
+                {projects.map((project, index) => (
+                    <ProjectCard key={index} project={project} />
+                ))}
+            </div>
+            <a href="https://alwinray37.github.io/WebDev/"><button>See More.</button></a>
         </div>
     )
 }
