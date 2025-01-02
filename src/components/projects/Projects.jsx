@@ -8,31 +8,34 @@ const projects = [
         title: "Calculator",
         description: "Simple Calculator made with HTML, CSS, and JavaScript",
         image: calculatorImg,
-        stack: "HTML, CSS, JavaScript"
+        stack: "HTML, CSS, JavaScript",
+        url: "https://alwinray37.github.io/WebDev/projects/calculator/calculator.html"
     },
     {
         title: "Volleyball Library",
         description: "A library of volleyball drills where coaches can use to create their practice plans.",
         image: drillImg,
-        stack: "React, Node.js, MongoDB"
+        stack: "React, Node.js, MongoDB",
+        url: "https://alwinray37.github.io/vball-practice/"
     },
     {
         title: "Etch-A-Sketch",
         description: "Web app that lets users draw and Sketch on a virtual canvas. Written in HTML, CSS and JavaScript.",
         image: etchImg,
-        stack: "Python, Flask, SQL"
+        stack: "Python, Flask, SQL",
+        url: "https://alwinray37.github.io/WebDev/projects/etch-a-sketch/etch.html"
     }
 ];
 const ProjectCard = ({ project }) => {
     return (
-        <div className={styles.card}>
+        <a href={project.url} className={styles.card}>
             <div className={styles.cardImg}>
                 <img src={project.image} alt={project.title} />
             </div>
             <h3 className={styles.title}>{project.title}</h3>
             <p>{project.description}</p>
             {/* <div className={styles.stack}>{project.stack}</div> */}
-        </div>
+        </a>
     );
 };
 

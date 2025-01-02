@@ -10,7 +10,7 @@ div.projects {
 }
 .projectsCont {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .card {
@@ -18,6 +18,9 @@ div.projects {
     background-color: rgba(137, 43, 226, 0.559);
     border-radius: 10px;
     overflow: hidden;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: transform .3s ease;
 }
 .cardImg {
     height: 150px;
@@ -29,6 +32,9 @@ div.projects {
 }
 .card p, .card h3, .card .stack {
     margin: 5px;
+}
+.card:hover{
+    transform: scale(1.05);
 }
 
 @media (max-width: 750px){

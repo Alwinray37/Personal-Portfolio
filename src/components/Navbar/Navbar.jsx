@@ -18,7 +18,7 @@ function Navbar(){
             <i className={`pi pi-bars ${styles.menuBar}`} onClick={handleMenuToggle}></i>
 
             <div className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ''}`} onClick={() => setMenuOpen(false)}>
-                <a href="#">About</a>
+                <a href="https://linkedin.com/in/alwinray">LinkedIn</a>
                 <a href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
