@@ -16,10 +16,12 @@ function App() {
 	return (
 		<main className={styles.app}>
 			<Navbar/>
+			<div className={styles.main}>
 			<Hero/>
 			<About />
 			<Projects />
 			<Contact />
+			</div>
 		</main>
 	)
 }

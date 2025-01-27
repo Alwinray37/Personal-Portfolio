@@ -22,10 +22,12 @@ const projects = [
         title: "Etch-A-Sketch",
         description: "Web app that lets users draw and Sketch on a virtual canvas. Written in HTML, CSS and JavaScript.",
         image: etchImg,
-        stack: "Python, Flask, SQL",
+        stack: "HTML, CSS, JavaScript",
         url: "https://alwinray37.github.io/WebDev/projects/etch-a-sketch/etch.html"
     }
 ];
+// function to create a card for each project 
+// given a project object, destructre and return a card 
 const ProjectCard = ({ project }) => {
     return (
         <a href={project.url} className={styles.card}>
