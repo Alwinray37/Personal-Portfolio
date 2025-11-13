@@ -44,7 +44,7 @@ const ProjectCard = ({ project }) => {
 function Projects() {
 
     return (
-        <div id='projects' className={`container ${styles.projects}`}>
+        <div id='projects' className={`${styles.container} ${styles.projects}`}>
             <h1>Projects</h1>
             <div className={`${styles.projectsCont}`}>
                 {projects.map((project, index) => (

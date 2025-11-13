@@ -1,19 +1,10 @@
-.container{
-    outline: 1px solid red;
-    width: 100vw;
+.about {
     padding: 20px;
-}
-.section {
-    background-color: rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
-    padding: 20px;
-}
-.col {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
-.skillsContainer {
-    display: flex;
-    gap: 10px;
+
+.section{
+    
 }

@@ -1,2 +1,69 @@
+# Node
 node_modules
-node_modules
+
+# profileinfo.json
+src/components/profile/profileinfo.json
+
+# Vite / build output
+dist/
+build/
+out/
+
+# Environment files (local secrets)
+.env
+.env.*.local
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+Icon?
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.iml
+*.swp
+*.swo
+
+# Tool cache / build caches
+.cache/
+.parcel-cache/
+.next/
+.vercel/
+.netlify/
+.firebase/
+.turbo/
+.pnp.*
+.yarn-integrity
+
+# Coverage, test output
+coverage/
+.nyc_output/
+test-results/
+jest-report/
+jest-cache/
+
+# Linter caches
+.eslintcache
+.stylelintcache
+
+# Misc
+dist-ssr/
+*.log
+*.tgz
+
+# Ignore profile info if it contains secrets (keep this if intentional)
+# use # for comment lines, // is not a gitignore comment
+src/components/profile/profileinfo.json

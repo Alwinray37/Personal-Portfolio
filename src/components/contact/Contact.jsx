@@ -13,11 +13,16 @@ const contactLinks =[
         icon: <i className='pi pi-linkedin'></i>,  // You can replace this with an actual image or SVG icon
         aTag: "https://linkedin.com/in/alwinray"
     },
-    // {
-    //     title: "Discord",
-    //     icon: <i className='pi pi-discord'></i>,  // You can replace this with an actual image or SVG icon
-    //     aTag: "https://linkedin.com/in/alwinray"
-    // }
+    {
+        title: "GitHub",
+        icon: <i className='pi pi-github'></i>,  // You can replace this with an actual image or SVG icon
+        aTag: "https://github.com/alwinray37"
+    },
+    {
+        title: "Instagram",
+        icon: <i className='pi pi-instagram'></i>,  // You can replace this with an actual image or SVG icon
+        aTag: "https://instagram.com/alwinray"
+    }
 ];
 const ContactLinks = () => {
     return (

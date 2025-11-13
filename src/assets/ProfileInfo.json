@@ -1,0 +1,31 @@
+
+{
+    "name": "Alwin Ray Roble",
+    "title": "Computer Science Student at CSUN",
+    "subtitle": " Web Developer | Volleyball Coach.",
+    "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "CSS",
+        "HTML"
+    ],
+    "email": "alwinray37@gmail.com",
+    "links": [
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/alwinray",
+            "faIcon": "fa-brands fa-linkedin"
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/alwinray37",
+            "faIcon": "fa-brands fa-github"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/alwinray/",
+            "faIcon": "fa-brands fa-instagram"
+        }
+    ]
+}

@@ -5,9 +5,12 @@ import './index.css'
 import '@fontsource/outfit'
 import '@fontsource/roboto'
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 )

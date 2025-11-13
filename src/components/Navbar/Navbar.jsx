@@ -1,27 +1,23 @@
 import React, { useState } from "react"
 import styles from './Navbar.module.css'
-import resume from '../../../public/Alwin_Roble_CV.pdf'
 import 'primeicons/primeicons.css'
+import { Link, NavLink } from "react-router-dom";
 
 
 function Navbar(){
-    const [menuOpen, setMenuOpen] = useState(false);
-    const handleMenuToggle = () => {
-        setMenuOpen(!menuOpen); // Toggle the menu open/close state
-    };
 
     return (
         <nav className={styles.navbar}>
-            <a href="/" className={styles.title}>ARR</a>
+            <div className={`${styles.navLinks}`} >
+                <NavLink to="/" className={({isActive}) => isActive ? styles.active : undefined}>AlwinRay</NavLink>
+                <NavLink to="/about" className={({isActive}) => isActive ? styles.active : undefined}>Bio</NavLink>
+                {/* <NavLink to="/projects" className={({isActive}) => isActive ? styles.active : undefined}>Projects</NavLink> */}
+                <NavLink to="/contact" className={({isActive}) => isActive ? styles.active : undefined}>Contact</NavLink>
 
-            {/* Hamburger menu */}
-            <i className={`pi pi-bars ${styles.menuBar}`} onClick={handleMenuToggle}></i>
-
-            <div className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ''}`} onClick={() => setMenuOpen(false)}>
-                <a href="https://linkedin.com/in/alwinray">LinkedIn</a>
-                <a href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                {/* resume */}
+                <a href="/Alwin_Roble_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
             </div>
         </nav>
     )

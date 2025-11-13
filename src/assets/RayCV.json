@@ -1,0 +1,66 @@
+{
+  "general": {
+    "summary": "Pursuing a B.S. in Computer Science at California State University, Northridge. Passionate about building accessible, performant web applications and coaching volleyball.",
+    "location": "Southern California",
+    "email": "alwin-ray.roble.093@my.csun.edu",
+    "linkedin": "https://www.linkedin.com/in/alwinray/",
+    "website": "https://alwinray.dev/",
+    "githubPages": "https://alwinray37.github.io/WebDev/"
+  },
+  "education": [
+    {
+      "school": "California State University, Northridge",
+      "degree": "B.S. Computer Science (in progress)",
+      "dates": "2024 — Present",
+      "notes": "Focused on software engineering, algorithms, and systems."
+    },
+    {
+      "school": "Santa Monica College",
+      "degree": "Associate of Science — Web Development",
+      "dates": "2017 — 2022",
+      "notes": "Completed web development coursework and projects."
+    }
+  ],
+  "workExperience": [
+    {
+      "title": "Software Engineering Intern",
+      "company": "Acme Tech Co.",
+      "dates": "Jun 2024 — Aug 2024",
+      "description": "Built front-end features with React, improved component performance, and added unit tests."
+    },
+    {
+      "title": "Web Developer (Freelance)",
+      "company": "Independent",
+      "dates": "Jan 2023 — Present",
+      "description": "Delivered responsive websites and landing pages for local businesses; handled deployment and basic SEO."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Personal Portfolio",
+      "description": "Personal site built with React + Vite showcasing projects and contact information.",
+      "link": "/"
+    },
+    {
+      "title": "Task Tracker",
+      "description": "A full-stack demo application (React + Express + SQLite) with authentication and CRUD operations.",
+      "link": "https://github.com/Alwinray37/task-tracker"
+    },
+    {
+      "title": "Volleyball Practice Planner",
+      "description": "A small frontend project for volleyball drills and practice planning (hosted on GitHub Pages).",
+      "link": "https://alwinray37.github.io/vball-practice/"
+    },
+    {
+      "title": "WebDev (collection)",
+      "description": "Collection of demo projects hosted under the WebDev GitHub Pages site.",
+      "link": "https://alwinray37.github.io/WebDev/index.html"
+    }
+  ],
+  "achievements": [
+    "Completed Web Development associate degree, Santa Monica College",
+    "Dean's List (semester)",
+    "Built and launched 5+ client websites as a freelance developer"
+  ],
+  "skills": ["JavaScript", "React", "Node.js", "HTML", "CSS", "Accessibility", "Git"]
+}
