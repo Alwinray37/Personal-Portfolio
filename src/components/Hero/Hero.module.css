@@ -11,6 +11,12 @@
     align-items: center;
     gap: 20px;
 }
+.intro{
+
+}
+h2 {
+    font-size: 3rem;
+}
 .pfp{
     /* let the pfp element fill its column; the image inside will cover */
     width: 100%;
@@ -72,6 +78,7 @@ Button:hover{
     width: 100%;
     display:flex;
     gap: 20px;
+    justify-content: start;
 }
 
 .links a{

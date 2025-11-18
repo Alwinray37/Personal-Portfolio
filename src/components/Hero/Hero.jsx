@@ -10,7 +10,7 @@ function Hero() {
     return (
         <div className={styles.container}>
             <div className={`${styles.heroText} ${styles.col1}`}>
-                <div>
+                <div className={styles.intro}>
                     <h2>Alwin Ray Roble</h2>
                     <div className='hero-titles'>
                         <p>{info.title}</p>

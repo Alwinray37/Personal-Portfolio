@@ -2,8 +2,16 @@ import styles from './Projects.module.css'
 import calculatorImg from '../../assets/calculator.png'
 import etchImg from '../../assets/etchSketch.png'
 import drillImg from '../../assets/vballDrills.png'
+import stepUpImg from '../../assets/stepUp.png'
 
 const projects = [
+    {
+        title: "StepUp",
+        description: "SOSE Hackathon Oct. 2025 winner. A volunteer board that connects organizations and volunteers through smart scheduling and real time notifications..",
+        image: stepUpImg,
+        stack: "React+Vite, Bootstrap, Supabase",
+        url: "https://devpost.com/software/stepup-yihtcg"
+    },
     {
         title: "Calculator",
         description: "Simple Calculator made with HTML, CSS, and JavaScript",

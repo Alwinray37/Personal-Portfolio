@@ -5,6 +5,7 @@
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
+    /* background-color: rgba(0, 0, 0, 0.35); */
 }
 div.projects {
     display: flex;
@@ -17,18 +18,27 @@ div.projects {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center; /* center grid of cards */
+    align-items: flex-start; /* keep cards top-aligned */
 }
 .card {
-    flex: 1;
+    /* keep a consistent card size and allow wrapping
+       flex: 0 0 300px makes the card have a fixed base width */
+    flex: 0 0 300px;
+    /* fixed card height (can be adjusted) */
+    --card-height: 380px;
+    height: var(--card-height);
     background-color: rgba(137, 43, 226, 0.559);
     border-radius: 10px;
     overflow: hidden;
     color: whitesmoke;
     text-decoration: none;
     transition: transform .3s ease;
+    width: 100%; /* width determined by flex-basis */
 }
 .cardImg {
-    height: 150px;
+    /* make the image area take ~50-60% of the card height */
+    height: calc(var(--card-height) * 0.55);
     overflow: hidden;
 }
 .cardImg img{
@@ -45,5 +55,10 @@ div.projects {
 @media (max-width: 750px){
     .projectsCont{
         flex-direction: column;
+    }
+    .card {
+        /* on small screens use auto height so content flows naturally */
+        height: auto;
+        --card-height: auto;
     }
 }

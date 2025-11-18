@@ -1,5 +1,6 @@
 import styles from './App.module.css'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Hero from './components/Hero/Hero.jsx'
 import About from './components/about/About.jsx'
@@ -7,7 +8,7 @@ import Projects from './components/projects/Projects.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
 import Profile from './components/profile/Profile.jsx'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import NotFound from './components/NotFound/NotFound.jsx'
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { fas } from '@fortawesome/free-solid-svg-icons'; // Import solid icons
 // import { fab } from '@fortawesome/free-brands-svg-icons'; // Import brand icons
@@ -16,6 +17,24 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
 	const location = useLocation()
+	const navigate = useNavigate()
+
+	// If we were redirected here by the GitHub Pages 404 fallback, it will
+	// include the original path in a `redirect` query parameter. Read that
+	// and navigate to the intended path so BrowserRouter can handle it.
+	useEffect(() => {
+		try {
+			const params = new URLSearchParams(window.location.search)
+			const redirect = params.get('redirect')
+			if (redirect) {
+				// decode and navigate to the original path
+				navigate(decodeURIComponent(redirect), { replace: true })
+			}
+		} catch (e) {
+			// ignore
+		}
+	// run once on mount
+	}, [navigate])
 
 	return (
 		<>
@@ -31,6 +50,7 @@ function App() {
 								<Route path="/projects" element={<Projects />} />
 								<Route path="/contact" element={<Contact />} />
 								<Route path="/profile" element={<Profile />} />
+								<Route path="*" element={<NotFound />} />
 							</Routes>
 						</div>
 					</div>
