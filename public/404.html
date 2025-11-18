@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Page not found</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // GitHub Pages will serve this 404 for deep links. This script
+      // redirects to the app root (relative) and passes the original
+      // path in a `redirect` query param so the SPA can navigate
+      // to the intended route after boot.
+      (function () {
+        try {
+          var path = window.location.pathname + window.location.search + window.location.hash;
+          // Use a relative redirect so this works for project pages (repo-name)
+          var redirectTo = './?redirect=' + encodeURIComponent(path);
+          window.location.replace(redirectTo);
+        } catch (e) {
+          // Fallback: go to root
+          window.location.replace('./');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
+</html>
