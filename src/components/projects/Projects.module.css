@@ -16,17 +16,19 @@ div.projects {
 }
 .projectsCont {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center; /* center grid of cards */
     align-items: flex-start; /* keep cards top-aligned */
 }
 .card {
+    display: flex;
     /* keep a consistent card size and allow wrapping
        flex: 0 0 300px makes the card have a fixed base width */
     flex: 0 0 300px;
     /* fixed card height (can be adjusted) */
-    --card-height: 380px;
+    --card-height: 300px;
     height: var(--card-height);
     background-color: rgba(137, 43, 226, 0.559);
     border-radius: 10px;
@@ -38,15 +40,20 @@ div.projects {
 }
 .cardImg {
     /* make the image area take ~50-60% of the card height */
-    height: calc(var(--card-height) * 0.55);
+    /* height: calc(var(--card-height) * 0.55); */
     overflow: hidden;
+    flex: 1;
 }
 .cardImg img{
     height: 100%;
     object-fit: cover;
 }
-.card p, .card h3, .card .stack {
-    margin: 5px;
+.cardInfo{
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .card:hover{
     transform: scale(1.05);

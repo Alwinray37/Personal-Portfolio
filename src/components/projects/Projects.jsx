@@ -42,9 +42,10 @@ const ProjectCard = ({ project }) => {
             <div className={styles.cardImg}>
                 <img src={project.image} alt={project.title} />
             </div>
-            <h3 className={styles.title}>{project.title}</h3>
-            <p>{project.description}</p>
-            {/* <div className={styles.stack}>{project.stack}</div> */}
+            <div className={styles.cardInfo}>
+                <h3 className={styles.title}>{project.title}</h3>
+                <p>{project.description}</p>
+            </div>
         </a>
     );
 };
