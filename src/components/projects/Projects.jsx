@@ -14,7 +14,7 @@ const projects = [
     },
     {
         title: "Calculator",
-        description: "Simple Calculator made with HTML, CSS, and JavaScript",
+        description: "Simple Calculator built with HTML, CSS, and JavaScript, featuring addition, subtraction, multiplication, and division, as well as the ability to clear the display and delete individual digits.",
         image: calculatorImg,
         stack: "HTML, CSS, JavaScript",
         url: "https://alwinray37.github.io/WebDev/projects/calculator/calculator.html"
@@ -45,6 +45,7 @@ const ProjectCard = ({ project }) => {
             <div className={styles.cardInfo}>
                 <h3 className={styles.title}>{project.title}</h3>
                 <p>{project.description}</p>
+                <p>Built with: {project.stack}</p>
             </div>
         </a>
     );

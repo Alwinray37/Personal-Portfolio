@@ -17,17 +17,16 @@ function Hero() {
                         <p>{info.title}</p>
                         <p>{info.subtitle}</p>  
                     </div>
-                    {/* <div className="contact">
-                        <a href={`mailto:${info.email}`}>{info.email}</a>
-
-                    </div> */}
                 </div>
                 <div className={styles.links}>
                     {info.links.map(link => (
                         <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer">
-                            <i className={link.faIcon}/>: {link.name}
+                            <i className={link.faIcon}/> {link.name}
                         </a>
                     ))}
+                    <a href={`mailto:${info.email}`}>
+                        <i className={`fa-regular fa-envelope`}/> {info.email}
+                    </a>
                 </div>
             </div>
 

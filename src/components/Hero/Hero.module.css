@@ -88,6 +88,9 @@
     align-items: stretch;
     justify-content: center;
 }
+#heroComponent i{
+    margin-right: 1rem;
+}
 @media (max-width: 800px){
     .heroText h2 {
         font-size: 3rem;

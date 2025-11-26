@@ -48,9 +48,6 @@
 
 .card {
     display: flex;
-    /* fixed card height (can be adjusted) */
-    --card-height: 300px;
-    height: var(--card-height);
     background-color: var(--color-secondary);
     border-radius: 10px;
     overflow: hidden;
@@ -58,6 +55,7 @@
     text-decoration: none;
     transition: transform .3s ease;
     width: 100%; /* width determined by flex-basis */
+    height: 250px;
 }
 .cardImg {
     overflow: hidden;
@@ -70,7 +68,7 @@
 }
 .cardInfo{
     flex: 2;
-    padding: 10px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -87,10 +85,10 @@
 @media (max-width: 450px){
     .card {
         flex-direction: column;
-        height: 400px;
+        height: 450px;
     }
     .cardImg {
-        flex: 2;
+        flex: 1;
     }
     .cardInfo{
         flex: 1;
