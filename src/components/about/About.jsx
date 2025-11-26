@@ -9,7 +9,7 @@ function About() {
             
             <h2 className={styles.title}>Hi! My name is Alwin Ray, here's a little about me:</h2>
             <img src="src/assets/rnm.jpg" alt="Alwin Roble pfp" />
-            <div className={styles.content}>
+            <div className={`${styles.content} ${styles.content1}`}>
                 <p>
                     I am currently a Computer Science student at California State University, Northridge (CSUN), where I’m building a strong foundation in software engineering, system design, and problem-solving. Over the years, I’ve gained experience across several fields—web development, customer service work, volleyball coaching, and administrative assisting. These roles helped me develop adaptability, communication skills, and the ability to learn quickly in fast-paced environments.
                 </p>
@@ -26,10 +26,10 @@ function About() {
             
             <img src="src/assets/volleypic2.png" alt="" className={styles.image2} />
             
-            <img src="src/assets/sky.jpeg" alt="" className={styles.image2}/>
             
-            <h2 className={`${styles.title} ${styles.path}`}>Path </h2>
-            <div className={styles.content}>
+            <h2 className={`${styles.title} ${styles.path}`}>Path</h2>
+            
+            <div className={`${styles.content} ${styles.content2}`}>
                 <p>
                     I grew up in Culver City after my family immigrated to California in 2010. Adjusting to a new country taught me early on how to adapt, stay resilient, and work hard—values that continue to guide me today. I’ve always balanced academics with real-world experience, working in restaurants, customer service, volleyball coaching, and assisting roles. Each of these taught me teamwork, leadership, and how to stay calm under pressure.
                     <br></br> <br></br>
@@ -42,13 +42,12 @@ function About() {
                     Today, I’m motivated by the intersection of creativity and technology. Whether I’m coding, designing systems, or exploring new tools, I’m driven by the desire to build useful, meaningful, and intuitive solutions.
                 </p>
             </div>
+            <img src="src/assets/sky.jpeg" alt="" className={styles.image2}/>
             
-            
-            {/* skills */}
+            <img src="src/assets/hawaii1.png" alt="" />
             <h2 className={`${styles.title} ${styles.skillsTitle}`}>Education & Skills</h2>
-
             
-
+            
             <div className={styles.content}>
                 <p>
                     <strong>B.S. in Computer Science 2024 – 2026</strong> <br></br>
@@ -64,8 +63,6 @@ function About() {
                     ))}
                 </ul>
             </div>
-            
-            
             
         </div>
     )
