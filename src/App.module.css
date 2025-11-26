@@ -1,17 +1,6 @@
 @import './vars.css'; 
 @import './vars.css';
 
-/* Ensure the main app acts as a column flex container so the footer
-   can be pushed to the bottom when content is short. */
-.app {
-    background-color: var(--color-bg);
-    width: 100vw;
-    min-height: 100vh;
-    color: var(--color-text);
-    display: flex;
-    flex-direction: column;
-}
-
 /* Main content area inside the app; allow it to grow to fill
    available space so footer sits at the bottom. */
 .main {
@@ -22,23 +11,12 @@
     align-items: flex-start;
     justify-content: start;
     flex: 1; /* grow to push footer down */
-    padding: 0 2rem;
+    padding: 0;
+    gap: 20px;
 }
 
 /* Keep an optional container class if other parts of the app expect it */
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid whitesmoke;
-    width: 90%;
-    max-width: 800px;
-    padding: 1rem;
-    border-radius: 10px;
-    /* anchor to top of the main area (small top gap) */
-    margin: 0 auto;
-}
+/* global .container is used from index.css; keep App-specific layout in .main and .page */
 
 /* Page wrapper used to animate route changes */
 .page {

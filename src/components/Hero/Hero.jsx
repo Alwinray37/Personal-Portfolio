@@ -8,11 +8,12 @@ function Hero() {
     const info = profileInfo;
 
     return (
-        <div className={styles.container}>
+        <div id={styles.heroComponent}>
+            {/* column 1   */}
             <div className={`${styles.heroText} ${styles.col1}`}>
                 <div className={styles.intro}>
                     <h2>Alwin Ray Roble</h2>
-                    <div className='hero-titles'>
+                    <div className={styles.heroTitles}>
                         <p>{info.title}</p>
                         <p>{info.subtitle}</p>  
                     </div>
@@ -24,7 +25,7 @@ function Hero() {
                 <div className={styles.links}>
                     {info.links.map(link => (
                         <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer">
-                            <i className={link.faIcon}/>
+                            <i className={link.faIcon}/>: {link.name}
                         </a>
                     ))}
                 </div>

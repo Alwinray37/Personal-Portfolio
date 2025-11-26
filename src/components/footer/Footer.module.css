@@ -1,15 +1,11 @@
 /* Footer module styles (moved from inline styles in Footer.jsx) */
 .footer {
 	text-align: center;
-	padding: 1rem 0;
+	padding: 2rem 0;
 	border-top: 1px solid #ccc;
 	margin-top: 2rem;
-
-	/* If the app root is a column flex container (recommended), this
-	   ensures the footer sits at the bottom when content is short. */
-	margin-top: auto;
 }
 
 .footer p {
-	margin: 0;
+	margin: auto;
 }

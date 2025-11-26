@@ -1,4 +1,6 @@
-.container{
+
+/* Using global .container from index.css for layout; add NotFound-specific rules below */
+.notfoundRoot{
   min-height: 60vh;
   display:flex;
   flex-direction:column;
@@ -7,4 +9,4 @@
   color: whitesmoke;
   text-align:center;
 }
-.container a{ color: var(--color-tertiary); margin-top: 1rem; }
+.notfoundRoot a{ color: var(--color-tertiary); margin-top: 1rem; }

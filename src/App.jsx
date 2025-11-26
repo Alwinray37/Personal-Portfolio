@@ -41,7 +41,7 @@ function App() {
 			<main className={styles.app}>
 				<Navbar/>
 				<div className={styles.main}>
-					<div className={styles.container}>
+					<div className="container">
 						{/* keyed wrapper so the page remounts on route change and triggers the CSS animation */}
 						<div className={styles.page} key={location.pathname}>
 							<Routes location={location}>

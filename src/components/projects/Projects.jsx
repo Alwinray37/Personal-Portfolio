@@ -53,14 +53,15 @@ const ProjectCard = ({ project }) => {
 function Projects() {
 
     return (
-        <div id='projects' className={`${styles.container} ${styles.projects}`}>
-            <h1>Projects</h1>
+        <div id={styles.projects} className={`container`}>
+            <h1>Projects
+                <a href="https://alwinray37.github.io/WebDev/"><button>See More</button></a>
+            </h1>
             <div className={`${styles.projectsCont}`}>
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                 ))}
             </div>
-            <a href="https://alwinray37.github.io/WebDev/"><button>See More.</button></a>
         </div>
     )
 }
