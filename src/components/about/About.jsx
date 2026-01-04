@@ -1,5 +1,9 @@
 import styles from './about.module.css'
 import cv from '../../assets/RayCV.json'
+import skyImg from '../../assets/sky.jpeg'
+import volleyballImg from '../../assets/volleypic2.png'
+import hawaiiImg from '../../assets/hawaii1.png'
+import rnm from '../../assets/rnm.jpg'
 
 function About() {
     const { general, education = [], workExperience = [], projects = [], achievements = [], skills = [] } = cv || {}
@@ -8,7 +12,7 @@ function About() {
         <div className={styles.about} id={styles.about}>
             
             <h2 className={styles.title}>Hi! My name is Alwin Ray, here's a little about me:</h2>
-            <img src="src/assets/rnm.jpg" alt="Alwin Roble pfp" />
+            <img src={rnm} alt="Alwin Roble pfp" />
             <div className={`${styles.content} ${styles.content1}`}>
                 <p>
                     I am currently a Computer Science student at California State University, Northridge (CSUN), where I’m building a strong foundation in software engineering, system design, and problem-solving. Over the years, I’ve gained experience across several fields—web development, customer service work, volleyball coaching, and administrative assisting. These roles helped me develop adaptability, communication skills, and the ability to learn quickly in fast-paced environments.
@@ -24,7 +28,7 @@ function About() {
 
             </div>
             
-            <img src="src/assets/volleypic2.png" alt="" className={styles.image2} />
+            <img src={volleyballImg} alt="" className={styles.image2} />
             
             
             <h2 className={`${styles.title} ${styles.path}`}>Path</h2>
@@ -42,9 +46,9 @@ function About() {
                     Today, I’m motivated by the intersection of creativity and technology. Whether I’m coding, designing systems, or exploring new tools, I’m driven by the desire to build useful, meaningful, and intuitive solutions.
                 </p>
             </div>
-            <img src="src/assets/sky.jpeg" alt="" className={styles.image2}/>
+            <img src={skyImg} alt="" className={styles.image2}/>
             
-            <img src="src/assets/hawaii1.png" alt="" />
+            <img src={hawaiiImg} alt="" />
             <h2 className={`${styles.title} ${styles.skillsTitle}`}>Education & Skills</h2>
             
             
