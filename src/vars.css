@@ -2,7 +2,8 @@
     /* colors */
     --color-text: rgb(35, 35, 35);
     --color-primary: #22311d;
-    --color-secondary: #e2d9c7;
+    /* --color-secondary: #e2d9c7; */
+    --color-secondary: rgba(0, 0, 0, 0.168);
     --color-tertiary: #0b2447;
     --color-fourth: #006aff;
     --color-bg: #bfdffd;
